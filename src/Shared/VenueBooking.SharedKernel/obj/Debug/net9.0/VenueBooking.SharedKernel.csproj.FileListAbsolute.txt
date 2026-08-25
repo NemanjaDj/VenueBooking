@@ -1,0 +1,11 @@
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.SharedKernel\bin\Debug\net9.0\VenueBooking.SharedKernel.deps.json
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.SharedKernel\bin\Debug\net9.0\VenueBooking.SharedKernel.dll
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.SharedKernel\bin\Debug\net9.0\VenueBooking.SharedKernel.pdb
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.SharedKernel\obj\Debug\net9.0\VenueBooking.SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.SharedKernel\obj\Debug\net9.0\VenueBooking.SharedKernel.AssemblyInfoInputs.cache
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.SharedKernel\obj\Debug\net9.0\VenueBooking.SharedKernel.AssemblyInfo.cs
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.SharedKernel\obj\Debug\net9.0\VenueBooking.SharedKernel.csproj.CoreCompileInputs.cache
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.SharedKernel\obj\Debug\net9.0\VenueBooking.SharedKernel.dll
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.SharedKernel\obj\Debug\net9.0\refint\VenueBooking.SharedKernel.dll
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.SharedKernel\obj\Debug\net9.0\VenueBooking.SharedKernel.pdb
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.SharedKernel\obj\Debug\net9.0\ref\VenueBooking.SharedKernel.dll

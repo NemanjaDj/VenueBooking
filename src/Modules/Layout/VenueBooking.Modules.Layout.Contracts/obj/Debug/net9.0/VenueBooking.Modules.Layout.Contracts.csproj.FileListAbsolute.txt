@@ -1,0 +1,15 @@
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Layout\VenueBooking.Modules.Layout.Contracts\bin\Debug\net9.0\VenueBooking.Modules.Layout.Contracts.deps.json
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Layout\VenueBooking.Modules.Layout.Contracts\bin\Debug\net9.0\VenueBooking.Modules.Layout.Contracts.dll
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Layout\VenueBooking.Modules.Layout.Contracts\bin\Debug\net9.0\VenueBooking.Modules.Layout.Contracts.pdb
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Layout\VenueBooking.Modules.Layout.Contracts\bin\Debug\net9.0\VenueBooking.SharedKernel.dll
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Layout\VenueBooking.Modules.Layout.Contracts\bin\Debug\net9.0\VenueBooking.SharedKernel.pdb
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Layout\VenueBooking.Modules.Layout.Contracts\obj\Debug\net9.0\VenueBooking.Modules.Layout.Contracts.csproj.AssemblyReference.cache
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Layout\VenueBooking.Modules.Layout.Contracts\obj\Debug\net9.0\VenueBooking.Modules.Layout.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Layout\VenueBooking.Modules.Layout.Contracts\obj\Debug\net9.0\VenueBooking.Modules.Layout.Contracts.AssemblyInfoInputs.cache
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Layout\VenueBooking.Modules.Layout.Contracts\obj\Debug\net9.0\VenueBooking.Modules.Layout.Contracts.AssemblyInfo.cs
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Layout\VenueBooking.Modules.Layout.Contracts\obj\Debug\net9.0\VenueBooking.Modules.Layout.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Layout\VenueBooking.Modules.Layout.Contracts\obj\Debug\net9.0\VenueBoo.A33BA86F.Up2Date
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Layout\VenueBooking.Modules.Layout.Contracts\obj\Debug\net9.0\VenueBooking.Modules.Layout.Contracts.dll
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Layout\VenueBooking.Modules.Layout.Contracts\obj\Debug\net9.0\refint\VenueBooking.Modules.Layout.Contracts.dll
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Layout\VenueBooking.Modules.Layout.Contracts\obj\Debug\net9.0\VenueBooking.Modules.Layout.Contracts.pdb
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Layout\VenueBooking.Modules.Layout.Contracts\obj\Debug\net9.0\ref\VenueBooking.Modules.Layout.Contracts.dll

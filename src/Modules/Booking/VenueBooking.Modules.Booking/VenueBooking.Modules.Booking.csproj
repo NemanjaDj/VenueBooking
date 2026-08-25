@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\VenueBooking.SharedKernel\VenueBooking.SharedKernel.csproj" />
+    <ProjectReference Include="..\VenueBooking.Modules.Booking.Contracts\VenueBooking.Modules.Booking.Contracts.csproj" />
+    <ProjectReference Include="..\..\Scheduling\VenueBooking.Modules.Scheduling.Contracts\VenueBooking.Modules.Scheduling.Contracts.csproj" />
+    <ProjectReference Include="..\..\Payment\VenueBooking.Modules.Payment.Contracts\VenueBooking.Modules.Payment.Contracts.csproj" />
+    <ProjectReference Include="..\..\Venue\VenueBooking.Modules.Venue.Contracts\VenueBooking.Modules.Venue.Contracts.csproj" />
+    <ProjectReference Include="..\..\Identity\VenueBooking.Modules.Identity.Contracts\VenueBooking.Modules.Identity.Contracts.csproj" />
+    <ProjectReference Include="..\..\Notification\VenueBooking.Modules.Notification.Contracts\VenueBooking.Modules.Notification.Contracts.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

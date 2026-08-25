@@ -1,0 +1,1442 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Master\\source\\repos\\VenueBooking\\tests\\VenueBooking.IntegrationTests\\VenueBooking.IntegrationTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Host\\VenueBooking.Api\\VenueBooking.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Host\\VenueBooking.Api\\VenueBooking.Api.csproj",
+        "projectName": "VenueBooking.Api",
+        "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Host\\VenueBooking.Api\\VenueBooking.Api.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Host\\VenueBooking.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Booking\\VenueBooking.Modules.Booking\\VenueBooking.Modules.Booking.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Booking\\VenueBooking.Modules.Booking\\VenueBooking.Modules.Booking.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Event\\VenueBooking.Modules.Event\\VenueBooking.Modules.Event.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Event\\VenueBooking.Modules.Event\\VenueBooking.Modules.Event.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Identity\\VenueBooking.Modules.Identity\\VenueBooking.Modules.Identity.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Identity\\VenueBooking.Modules.Identity\\VenueBooking.Modules.Identity.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Layout\\VenueBooking.Modules.Layout\\VenueBooking.Modules.Layout.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Layout\\VenueBooking.Modules.Layout\\VenueBooking.Modules.Layout.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Notification\\VenueBooking.Modules.Notification\\VenueBooking.Modules.Notification.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Notification\\VenueBooking.Modules.Notification\\VenueBooking.Modules.Notification.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Payment\\VenueBooking.Modules.Payment\\VenueBooking.Modules.Payment.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Payment\\VenueBooking.Modules.Payment\\VenueBooking.Modules.Payment.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Scheduling\\VenueBooking.Modules.Scheduling\\VenueBooking.Modules.Scheduling.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Scheduling\\VenueBooking.Modules.Scheduling\\VenueBooking.Modules.Scheduling.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Venue\\VenueBooking.Modules.Venue\\VenueBooking.Modules.Venue.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Venue\\VenueBooking.Modules.Venue\\VenueBooking.Modules.Venue.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.16, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Booking\\VenueBooking.Modules.Booking.Contracts\\VenueBooking.Modules.Booking.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Booking\\VenueBooking.Modules.Booking.Contracts\\VenueBooking.Modules.Booking.Contracts.csproj",
+        "projectName": "VenueBooking.Modules.Booking.Contracts",
+        "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Booking\\VenueBooking.Modules.Booking.Contracts\\VenueBooking.Modules.Booking.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Booking\\VenueBooking.Modules.Booking.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Booking\\VenueBooking.Modules.Booking\\VenueBooking.Modules.Booking.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Booking\\VenueBooking.Modules.Booking\\VenueBooking.Modules.Booking.csproj",
+        "projectName": "VenueBooking.Modules.Booking",
+        "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Booking\\VenueBooking.Modules.Booking\\VenueBooking.Modules.Booking.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Booking\\VenueBooking.Modules.Booking\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Booking\\VenueBooking.Modules.Booking.Contracts\\VenueBooking.Modules.Booking.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Booking\\VenueBooking.Modules.Booking.Contracts\\VenueBooking.Modules.Booking.Contracts.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Identity\\VenueBooking.Modules.Identity.Contracts\\VenueBooking.Modules.Identity.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Identity\\VenueBooking.Modules.Identity.Contracts\\VenueBooking.Modules.Identity.Contracts.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Notification\\VenueBooking.Modules.Notification.Contracts\\VenueBooking.Modules.Notification.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Notification\\VenueBooking.Modules.Notification.Contracts\\VenueBooking.Modules.Notification.Contracts.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Payment\\VenueBooking.Modules.Payment.Contracts\\VenueBooking.Modules.Payment.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Payment\\VenueBooking.Modules.Payment.Contracts\\VenueBooking.Modules.Payment.Contracts.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Scheduling\\VenueBooking.Modules.Scheduling.Contracts\\VenueBooking.Modules.Scheduling.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Scheduling\\VenueBooking.Modules.Scheduling.Contracts\\VenueBooking.Modules.Scheduling.Contracts.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Venue\\VenueBooking.Modules.Venue.Contracts\\VenueBooking.Modules.Venue.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Venue\\VenueBooking.Modules.Venue.Contracts\\VenueBooking.Modules.Venue.Contracts.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Event\\VenueBooking.Modules.Event.Contracts\\VenueBooking.Modules.Event.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Event\\VenueBooking.Modules.Event.Contracts\\VenueBooking.Modules.Event.Contracts.csproj",
+        "projectName": "VenueBooking.Modules.Event.Contracts",
+        "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Event\\VenueBooking.Modules.Event.Contracts\\VenueBooking.Modules.Event.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Event\\VenueBooking.Modules.Event.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Event\\VenueBooking.Modules.Event\\VenueBooking.Modules.Event.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Event\\VenueBooking.Modules.Event\\VenueBooking.Modules.Event.csproj",
+        "projectName": "VenueBooking.Modules.Event",
+        "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Event\\VenueBooking.Modules.Event\\VenueBooking.Modules.Event.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Event\\VenueBooking.Modules.Event\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Event\\VenueBooking.Modules.Event.Contracts\\VenueBooking.Modules.Event.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Event\\VenueBooking.Modules.Event.Contracts\\VenueBooking.Modules.Event.Contracts.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Identity\\VenueBooking.Modules.Identity.Contracts\\VenueBooking.Modules.Identity.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Identity\\VenueBooking.Modules.Identity.Contracts\\VenueBooking.Modules.Identity.Contracts.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Venue\\VenueBooking.Modules.Venue.Contracts\\VenueBooking.Modules.Venue.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Venue\\VenueBooking.Modules.Venue.Contracts\\VenueBooking.Modules.Venue.Contracts.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Identity\\VenueBooking.Modules.Identity.Contracts\\VenueBooking.Modules.Identity.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Identity\\VenueBooking.Modules.Identity.Contracts\\VenueBooking.Modules.Identity.Contracts.csproj",
+        "projectName": "VenueBooking.Modules.Identity.Contracts",
+        "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Identity\\VenueBooking.Modules.Identity.Contracts\\VenueBooking.Modules.Identity.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Identity\\VenueBooking.Modules.Identity.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Identity\\VenueBooking.Modules.Identity\\VenueBooking.Modules.Identity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Identity\\VenueBooking.Modules.Identity\\VenueBooking.Modules.Identity.csproj",
+        "projectName": "VenueBooking.Modules.Identity",
+        "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Identity\\VenueBooking.Modules.Identity\\VenueBooking.Modules.Identity.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Identity\\VenueBooking.Modules.Identity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Identity\\VenueBooking.Modules.Identity.Contracts\\VenueBooking.Modules.Identity.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Identity\\VenueBooking.Modules.Identity.Contracts\\VenueBooking.Modules.Identity.Contracts.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Layout\\VenueBooking.Modules.Layout.Contracts\\VenueBooking.Modules.Layout.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Layout\\VenueBooking.Modules.Layout.Contracts\\VenueBooking.Modules.Layout.Contracts.csproj",
+        "projectName": "VenueBooking.Modules.Layout.Contracts",
+        "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Layout\\VenueBooking.Modules.Layout.Contracts\\VenueBooking.Modules.Layout.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Layout\\VenueBooking.Modules.Layout.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Layout\\VenueBooking.Modules.Layout\\VenueBooking.Modules.Layout.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Layout\\VenueBooking.Modules.Layout\\VenueBooking.Modules.Layout.csproj",
+        "projectName": "VenueBooking.Modules.Layout",
+        "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Layout\\VenueBooking.Modules.Layout\\VenueBooking.Modules.Layout.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Layout\\VenueBooking.Modules.Layout\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Event\\VenueBooking.Modules.Event.Contracts\\VenueBooking.Modules.Event.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Event\\VenueBooking.Modules.Event.Contracts\\VenueBooking.Modules.Event.Contracts.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Layout\\VenueBooking.Modules.Layout.Contracts\\VenueBooking.Modules.Layout.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Layout\\VenueBooking.Modules.Layout.Contracts\\VenueBooking.Modules.Layout.Contracts.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Notification\\VenueBooking.Modules.Notification.Contracts\\VenueBooking.Modules.Notification.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Notification\\VenueBooking.Modules.Notification.Contracts\\VenueBooking.Modules.Notification.Contracts.csproj",
+        "projectName": "VenueBooking.Modules.Notification.Contracts",
+        "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Notification\\VenueBooking.Modules.Notification.Contracts\\VenueBooking.Modules.Notification.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Notification\\VenueBooking.Modules.Notification.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Notification\\VenueBooking.Modules.Notification\\VenueBooking.Modules.Notification.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Notification\\VenueBooking.Modules.Notification\\VenueBooking.Modules.Notification.csproj",
+        "projectName": "VenueBooking.Modules.Notification",
+        "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Notification\\VenueBooking.Modules.Notification\\VenueBooking.Modules.Notification.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Notification\\VenueBooking.Modules.Notification\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Identity\\VenueBooking.Modules.Identity.Contracts\\VenueBooking.Modules.Identity.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Identity\\VenueBooking.Modules.Identity.Contracts\\VenueBooking.Modules.Identity.Contracts.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Notification\\VenueBooking.Modules.Notification.Contracts\\VenueBooking.Modules.Notification.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Notification\\VenueBooking.Modules.Notification.Contracts\\VenueBooking.Modules.Notification.Contracts.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Payment\\VenueBooking.Modules.Payment.Contracts\\VenueBooking.Modules.Payment.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Payment\\VenueBooking.Modules.Payment.Contracts\\VenueBooking.Modules.Payment.Contracts.csproj",
+        "projectName": "VenueBooking.Modules.Payment.Contracts",
+        "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Payment\\VenueBooking.Modules.Payment.Contracts\\VenueBooking.Modules.Payment.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Payment\\VenueBooking.Modules.Payment.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Payment\\VenueBooking.Modules.Payment\\VenueBooking.Modules.Payment.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Payment\\VenueBooking.Modules.Payment\\VenueBooking.Modules.Payment.csproj",
+        "projectName": "VenueBooking.Modules.Payment",
+        "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Payment\\VenueBooking.Modules.Payment\\VenueBooking.Modules.Payment.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Payment\\VenueBooking.Modules.Payment\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Payment\\VenueBooking.Modules.Payment.Contracts\\VenueBooking.Modules.Payment.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Payment\\VenueBooking.Modules.Payment.Contracts\\VenueBooking.Modules.Payment.Contracts.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Scheduling\\VenueBooking.Modules.Scheduling.Contracts\\VenueBooking.Modules.Scheduling.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Scheduling\\VenueBooking.Modules.Scheduling.Contracts\\VenueBooking.Modules.Scheduling.Contracts.csproj",
+        "projectName": "VenueBooking.Modules.Scheduling.Contracts",
+        "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Scheduling\\VenueBooking.Modules.Scheduling.Contracts\\VenueBooking.Modules.Scheduling.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Scheduling\\VenueBooking.Modules.Scheduling.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Scheduling\\VenueBooking.Modules.Scheduling\\VenueBooking.Modules.Scheduling.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Scheduling\\VenueBooking.Modules.Scheduling\\VenueBooking.Modules.Scheduling.csproj",
+        "projectName": "VenueBooking.Modules.Scheduling",
+        "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Scheduling\\VenueBooking.Modules.Scheduling\\VenueBooking.Modules.Scheduling.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Scheduling\\VenueBooking.Modules.Scheduling\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Scheduling\\VenueBooking.Modules.Scheduling.Contracts\\VenueBooking.Modules.Scheduling.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Scheduling\\VenueBooking.Modules.Scheduling.Contracts\\VenueBooking.Modules.Scheduling.Contracts.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Venue\\VenueBooking.Modules.Venue.Contracts\\VenueBooking.Modules.Venue.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Venue\\VenueBooking.Modules.Venue.Contracts\\VenueBooking.Modules.Venue.Contracts.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Venue\\VenueBooking.Modules.Venue.Contracts\\VenueBooking.Modules.Venue.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Venue\\VenueBooking.Modules.Venue.Contracts\\VenueBooking.Modules.Venue.Contracts.csproj",
+        "projectName": "VenueBooking.Modules.Venue.Contracts",
+        "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Venue\\VenueBooking.Modules.Venue.Contracts\\VenueBooking.Modules.Venue.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Venue\\VenueBooking.Modules.Venue.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Venue\\VenueBooking.Modules.Venue\\VenueBooking.Modules.Venue.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Venue\\VenueBooking.Modules.Venue\\VenueBooking.Modules.Venue.csproj",
+        "projectName": "VenueBooking.Modules.Venue",
+        "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Venue\\VenueBooking.Modules.Venue\\VenueBooking.Modules.Venue.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Venue\\VenueBooking.Modules.Venue\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Identity\\VenueBooking.Modules.Identity.Contracts\\VenueBooking.Modules.Identity.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Identity\\VenueBooking.Modules.Identity.Contracts\\VenueBooking.Modules.Identity.Contracts.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Venue\\VenueBooking.Modules.Venue.Contracts\\VenueBooking.Modules.Venue.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Venue\\VenueBooking.Modules.Venue.Contracts\\VenueBooking.Modules.Venue.Contracts.csproj"
+              },
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj",
+        "projectName": "VenueBooking.SharedKernel",
+        "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Master\\source\\repos\\VenueBooking\\tests\\VenueBooking.IntegrationTests\\VenueBooking.IntegrationTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Master\\source\\repos\\VenueBooking\\tests\\VenueBooking.IntegrationTests\\VenueBooking.IntegrationTests.csproj",
+        "projectName": "VenueBooking.IntegrationTests",
+        "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\tests\\VenueBooking.IntegrationTests\\VenueBooking.IntegrationTests.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\tests\\VenueBooking.IntegrationTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Host\\VenueBooking.Api\\VenueBooking.Api.csproj": {
+                "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Host\\VenueBooking.Api\\VenueBooking.Api.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.12.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Booking\VenueBooking.Modules.Booking.Contracts\bin\Debug\net9.0\VenueBooking.Modules.Booking.Contracts.deps.json
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Booking\VenueBooking.Modules.Booking.Contracts\bin\Debug\net9.0\VenueBooking.Modules.Booking.Contracts.dll
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Booking\VenueBooking.Modules.Booking.Contracts\bin\Debug\net9.0\VenueBooking.Modules.Booking.Contracts.pdb
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Booking\VenueBooking.Modules.Booking.Contracts\bin\Debug\net9.0\VenueBooking.SharedKernel.dll
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Booking\VenueBooking.Modules.Booking.Contracts\bin\Debug\net9.0\VenueBooking.SharedKernel.pdb
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Booking\VenueBooking.Modules.Booking.Contracts\obj\Debug\net9.0\VenueBooking.Modules.Booking.Contracts.csproj.AssemblyReference.cache
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Booking\VenueBooking.Modules.Booking.Contracts\obj\Debug\net9.0\VenueBooking.Modules.Booking.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Booking\VenueBooking.Modules.Booking.Contracts\obj\Debug\net9.0\VenueBooking.Modules.Booking.Contracts.AssemblyInfoInputs.cache
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Booking\VenueBooking.Modules.Booking.Contracts\obj\Debug\net9.0\VenueBooking.Modules.Booking.Contracts.AssemblyInfo.cs
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Booking\VenueBooking.Modules.Booking.Contracts\obj\Debug\net9.0\VenueBooking.Modules.Booking.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Booking\VenueBooking.Modules.Booking.Contracts\obj\Debug\net9.0\VenueBoo.DE78B072.Up2Date
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Booking\VenueBooking.Modules.Booking.Contracts\obj\Debug\net9.0\VenueBooking.Modules.Booking.Contracts.dll
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Booking\VenueBooking.Modules.Booking.Contracts\obj\Debug\net9.0\refint\VenueBooking.Modules.Booking.Contracts.dll
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Booking\VenueBooking.Modules.Booking.Contracts\obj\Debug\net9.0\VenueBooking.Modules.Booking.Contracts.pdb
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Booking\VenueBooking.Modules.Booking.Contracts\obj\Debug\net9.0\ref\VenueBooking.Modules.Booking.Contracts.dll

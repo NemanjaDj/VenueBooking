@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.2" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Modules\Identity\VenueBooking.Modules.Identity\VenueBooking.Modules.Identity.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Venue\VenueBooking.Modules.Venue\VenueBooking.Modules.Venue.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Scheduling\VenueBooking.Modules.Scheduling\VenueBooking.Modules.Scheduling.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Booking\VenueBooking.Modules.Booking\VenueBooking.Modules.Booking.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Payment\VenueBooking.Modules.Payment\VenueBooking.Modules.Payment.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Notification\VenueBooking.Modules.Notification\VenueBooking.Modules.Notification.csproj" />
+    <ProjectReference Include="..\..\src\Shared\VenueBooking.SharedKernel\VenueBooking.SharedKernel.csproj" />
+  </ItemGroup>
+
+</Project>

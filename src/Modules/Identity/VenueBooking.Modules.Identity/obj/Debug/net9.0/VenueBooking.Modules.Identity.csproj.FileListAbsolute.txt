@@ -1,0 +1,17 @@
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Identity\VenueBooking.Modules.Identity\bin\Debug\net9.0\VenueBooking.Modules.Identity.deps.json
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Identity\VenueBooking.Modules.Identity\bin\Debug\net9.0\VenueBooking.Modules.Identity.dll
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Identity\VenueBooking.Modules.Identity\bin\Debug\net9.0\VenueBooking.Modules.Identity.pdb
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Identity\VenueBooking.Modules.Identity\bin\Debug\net9.0\VenueBooking.Modules.Identity.Contracts.dll
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Identity\VenueBooking.Modules.Identity\bin\Debug\net9.0\VenueBooking.SharedKernel.dll
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Identity\VenueBooking.Modules.Identity\bin\Debug\net9.0\VenueBooking.SharedKernel.pdb
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Identity\VenueBooking.Modules.Identity\bin\Debug\net9.0\VenueBooking.Modules.Identity.Contracts.pdb
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Identity\VenueBooking.Modules.Identity\obj\Debug\net9.0\VenueBooking.Modules.Identity.csproj.AssemblyReference.cache
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Identity\VenueBooking.Modules.Identity\obj\Debug\net9.0\VenueBooking.Modules.Identity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Identity\VenueBooking.Modules.Identity\obj\Debug\net9.0\VenueBooking.Modules.Identity.AssemblyInfoInputs.cache
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Identity\VenueBooking.Modules.Identity\obj\Debug\net9.0\VenueBooking.Modules.Identity.AssemblyInfo.cs
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Identity\VenueBooking.Modules.Identity\obj\Debug\net9.0\VenueBooking.Modules.Identity.csproj.CoreCompileInputs.cache
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Identity\VenueBooking.Modules.Identity\obj\Debug\net9.0\VenueBoo.ECBC3404.Up2Date
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Identity\VenueBooking.Modules.Identity\obj\Debug\net9.0\VenueBooking.Modules.Identity.dll
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Identity\VenueBooking.Modules.Identity\obj\Debug\net9.0\refint\VenueBooking.Modules.Identity.dll
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Identity\VenueBooking.Modules.Identity\obj\Debug\net9.0\VenueBooking.Modules.Identity.pdb
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Identity\VenueBooking.Modules.Identity\obj\Debug\net9.0\ref\VenueBooking.Modules.Identity.dll
