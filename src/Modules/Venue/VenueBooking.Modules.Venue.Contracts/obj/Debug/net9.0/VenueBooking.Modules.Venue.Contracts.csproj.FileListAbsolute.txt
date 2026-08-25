@@ -13,3 +13,4 @@ C:\Users\Master\source\repos\VenueBooking\src\Modules\Venue\VenueBooking.Modules
 C:\Users\Master\source\repos\VenueBooking\src\Modules\Venue\VenueBooking.Modules.Venue.Contracts\obj\Debug\net9.0\refint\VenueBooking.Modules.Venue.Contracts.dll
 C:\Users\Master\source\repos\VenueBooking\src\Modules\Venue\VenueBooking.Modules.Venue.Contracts\obj\Debug\net9.0\VenueBooking.Modules.Venue.Contracts.pdb
 C:\Users\Master\source\repos\VenueBooking\src\Modules\Venue\VenueBooking.Modules.Venue.Contracts\obj\Debug\net9.0\ref\VenueBooking.Modules.Venue.Contracts.dll
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Venue\VenueBooking.Modules.Venue.Contracts\obj\Debug\net9.0\VenueBooking.Modules.Venue.Contracts.sourcelink.json

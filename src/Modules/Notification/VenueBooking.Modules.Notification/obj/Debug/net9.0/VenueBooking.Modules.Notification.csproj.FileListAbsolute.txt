@@ -17,3 +17,4 @@ C:\Users\Master\source\repos\VenueBooking\src\Modules\Notification\VenueBooking.
 C:\Users\Master\source\repos\VenueBooking\src\Modules\Notification\VenueBooking.Modules.Notification\obj\Debug\net9.0\refint\VenueBooking.Modules.Notification.dll
 C:\Users\Master\source\repos\VenueBooking\src\Modules\Notification\VenueBooking.Modules.Notification\obj\Debug\net9.0\VenueBooking.Modules.Notification.pdb
 C:\Users\Master\source\repos\VenueBooking\src\Modules\Notification\VenueBooking.Modules.Notification\obj\Debug\net9.0\ref\VenueBooking.Modules.Notification.dll
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Notification\VenueBooking.Modules.Notification\obj\Debug\net9.0\VenueBooking.Modules.Notification.sourcelink.json

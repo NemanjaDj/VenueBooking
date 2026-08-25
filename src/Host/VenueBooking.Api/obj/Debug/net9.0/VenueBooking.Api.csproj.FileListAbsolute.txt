@@ -64,3 +64,6 @@ C:\Users\Master\source\repos\VenueBooking\src\Host\VenueBooking.Api\bin\Debug\ne
 C:\Users\Master\source\repos\VenueBooking\src\Host\VenueBooking.Api\bin\Debug\net9.0\VenueBooking.Modules.Layout.pdb
 C:\Users\Master\source\repos\VenueBooking\src\Host\VenueBooking.Api\bin\Debug\net9.0\VenueBooking.Modules.Event.Contracts.pdb
 C:\Users\Master\source\repos\VenueBooking\src\Host\VenueBooking.Api\bin\Debug\net9.0\VenueBooking.Modules.Layout.Contracts.pdb
+C:\Users\Master\source\repos\VenueBooking\src\Host\VenueBooking.Api\bin\Debug\net9.0\VenueBooking.Contracts.dll
+C:\Users\Master\source\repos\VenueBooking\src\Host\VenueBooking.Api\bin\Debug\net9.0\VenueBooking.Contracts.pdb
+C:\Users\Master\source\repos\VenueBooking\src\Host\VenueBooking.Api\obj\Debug\net9.0\VenueBooking.Api.sourcelink.json

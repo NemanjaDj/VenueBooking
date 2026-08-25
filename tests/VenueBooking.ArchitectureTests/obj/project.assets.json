@@ -449,6 +449,7 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": "9.0.16",
+          "VenueBooking.Contracts": "1.0.0",
           "VenueBooking.Modules.Booking": "1.0.0",
           "VenueBooking.Modules.Event": "1.0.0",
           "VenueBooking.Modules.Identity": "1.0.0",
@@ -468,6 +469,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        }
       },
       "VenueBooking.Modules.Booking/1.0.0": {
         "type": "project",
@@ -1262,6 +1273,11 @@
       "type": "project",
       "path": "../../src/Host/VenueBooking.Api/VenueBooking.Api.csproj",
       "msbuildProject": "../../src/Host/VenueBooking.Api/VenueBooking.Api.csproj"
+    },
+    "VenueBooking.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../../src/Shared/VenueBooking.Contracts/VenueBooking.Contracts.csproj",
+      "msbuildProject": "../../src/Shared/VenueBooking.Contracts/VenueBooking.Contracts.csproj"
     },
     "VenueBooking.Modules.Booking/1.0.0": {
       "type": "project",

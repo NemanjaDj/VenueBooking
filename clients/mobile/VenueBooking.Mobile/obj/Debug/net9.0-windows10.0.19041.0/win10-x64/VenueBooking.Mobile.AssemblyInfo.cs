@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VenueBooking.Mobile")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+eec4c61b4a267adfdfcd5441fe15d16766873781")]
 [assembly: System.Reflection.AssemblyProductAttribute("VenueBooking.Mobile")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VenueBooking.Mobile")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

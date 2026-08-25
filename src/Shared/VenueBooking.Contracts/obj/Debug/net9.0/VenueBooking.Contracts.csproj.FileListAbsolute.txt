@@ -1,0 +1,12 @@
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.Contracts\bin\Debug\net9.0\VenueBooking.Contracts.deps.json
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.Contracts\bin\Debug\net9.0\VenueBooking.Contracts.dll
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.Contracts\bin\Debug\net9.0\VenueBooking.Contracts.pdb
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.Contracts\obj\Debug\net9.0\VenueBooking.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.Contracts\obj\Debug\net9.0\VenueBooking.Contracts.AssemblyInfoInputs.cache
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.Contracts\obj\Debug\net9.0\VenueBooking.Contracts.AssemblyInfo.cs
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.Contracts\obj\Debug\net9.0\VenueBooking.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.Contracts\obj\Debug\net9.0\VenueBooking.Contracts.sourcelink.json
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.Contracts\obj\Debug\net9.0\VenueBooking.Contracts.dll
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.Contracts\obj\Debug\net9.0\refint\VenueBooking.Contracts.dll
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.Contracts\obj\Debug\net9.0\VenueBooking.Contracts.pdb
+C:\Users\Master\source\repos\VenueBooking\src\Shared\VenueBooking.Contracts\obj\Debug\net9.0\ref\VenueBooking.Contracts.dll

@@ -77,6 +77,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mobile", "mobile", "{92E02A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VenueBooking.Mobile", "clients\mobile\VenueBooking.Mobile\VenueBooking.Mobile.csproj", "{5B13ECAA-E455-4D82-827E-B5B4AAFDA8EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VenueBooking.Contracts", "src\Shared\VenueBooking.Contracts\VenueBooking.Contracts.csproj", "{1B9B8E7D-B2D5-46CB-A59B-3A0B9A3C1B9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -351,6 +353,18 @@ Global
 		{5B13ECAA-E455-4D82-827E-B5B4AAFDA8EC}.Release|x64.Build.0 = Release|Any CPU
 		{5B13ECAA-E455-4D82-827E-B5B4AAFDA8EC}.Release|x86.ActiveCfg = Release|Any CPU
 		{5B13ECAA-E455-4D82-827E-B5B4AAFDA8EC}.Release|x86.Build.0 = Release|Any CPU
+		{1B9B8E7D-B2D5-46CB-A59B-3A0B9A3C1B9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B9B8E7D-B2D5-46CB-A59B-3A0B9A3C1B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B9B8E7D-B2D5-46CB-A59B-3A0B9A3C1B9B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1B9B8E7D-B2D5-46CB-A59B-3A0B9A3C1B9B}.Debug|x64.Build.0 = Debug|Any CPU
+		{1B9B8E7D-B2D5-46CB-A59B-3A0B9A3C1B9B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1B9B8E7D-B2D5-46CB-A59B-3A0B9A3C1B9B}.Debug|x86.Build.0 = Debug|Any CPU
+		{1B9B8E7D-B2D5-46CB-A59B-3A0B9A3C1B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B9B8E7D-B2D5-46CB-A59B-3A0B9A3C1B9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B9B8E7D-B2D5-46CB-A59B-3A0B9A3C1B9B}.Release|x64.ActiveCfg = Release|Any CPU
+		{1B9B8E7D-B2D5-46CB-A59B-3A0B9A3C1B9B}.Release|x64.Build.0 = Release|Any CPU
+		{1B9B8E7D-B2D5-46CB-A59B-3A0B9A3C1B9B}.Release|x86.ActiveCfg = Release|Any CPU
+		{1B9B8E7D-B2D5-46CB-A59B-3A0B9A3C1B9B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -390,5 +404,6 @@ Global
 		{E8FD2897-EE55-46A7-8E00-FFE869DD85F8} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
 		{92E02AEA-C3B6-DF9B-BD3C-D94E8423B3BB} = {9123F88B-E531-3118-42D7-ED8CEF4BD00E}
 		{5B13ECAA-E455-4D82-827E-B5B4AAFDA8EC} = {92E02AEA-C3B6-DF9B-BD3C-D94E8423B3BB}
+		{1B9B8E7D-B2D5-46CB-A59B-3A0B9A3C1B9B} = {C8E42992-5E42-0C2B-DBFE-AA848D06431C}
 	EndGlobalSection
 EndGlobal

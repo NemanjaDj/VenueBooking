@@ -2294,6 +2294,16 @@
           }
         }
       },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        }
+      },
       "VenueBooking.SharedKernel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -4596,6 +4606,16 @@
           "lib/net8.0-android34.0/Xamarin.KotlinX.Serialization.Core.Jvm.dll": {
             "related": ".aar;.pdb;.xml"
           }
+        }
+      },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
         }
       },
       "VenueBooking.SharedKernel/1.0.0": {
@@ -6902,6 +6922,16 @@
           }
         }
       },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        }
+      },
       "VenueBooking.SharedKernel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -9204,6 +9234,16 @@
           "lib/net8.0-android34.0/Xamarin.KotlinX.Serialization.Core.Jvm.dll": {
             "related": ".aar;.pdb;.xml"
           }
+        }
+      },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
         }
       },
       "VenueBooking.SharedKernel/1.0.0": {
@@ -11510,6 +11550,16 @@
           }
         }
       },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        }
+      },
       "VenueBooking.SharedKernel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -13814,6 +13864,16 @@
           }
         }
       },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        }
+      },
       "VenueBooking.SharedKernel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -14224,6 +14284,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
         }
       },
       "VenueBooking.SharedKernel/1.0.0": {
@@ -14638,6 +14708,16 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        }
+      },
       "VenueBooking.SharedKernel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -15048,6 +15128,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
         }
       },
       "VenueBooking.SharedKernel/1.0.0": {
@@ -15462,6 +15552,16 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        }
+      },
       "VenueBooking.SharedKernel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -15872,6 +15972,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
         }
       },
       "VenueBooking.SharedKernel/1.0.0": {
@@ -16286,6 +16396,16 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        }
+      },
       "VenueBooking.SharedKernel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -16696,6 +16816,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
         }
       },
       "VenueBooking.SharedKernel/1.0.0": {
@@ -17110,6 +17240,16 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        }
+      },
       "VenueBooking.SharedKernel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -17520,6 +17660,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
         }
       },
       "VenueBooking.SharedKernel/1.0.0": {
@@ -17934,6 +18084,16 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        }
+      },
       "VenueBooking.SharedKernel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -18346,6 +18506,16 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        }
+      },
       "VenueBooking.SharedKernel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -18756,6 +18926,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
         }
       },
       "VenueBooking.SharedKernel/1.0.0": {
@@ -19420,6 +19600,16 @@
           }
         }
       },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        }
+      },
       "VenueBooking.SharedKernel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -20018,6 +20208,16 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
         }
       },
       "VenueBooking.SharedKernel/1.0.0": {
@@ -20620,6 +20820,16 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        }
+      },
       "VenueBooking.SharedKernel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -21220,6 +21430,16 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        }
+      },
       "VenueBooking.SharedKernel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -21818,6 +22038,16 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
         }
       },
       "VenueBooking.SharedKernel/1.0.0": {
@@ -22428,6 +22658,16 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
         }
       },
       "VenueBooking.SharedKernel/1.0.0": {
@@ -26385,6 +26625,11 @@
         "xamarin.kotlinx.serialization.core.jvm.nuspec"
       ]
     },
+    "VenueBooking.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../../../src/Shared/VenueBooking.Contracts/VenueBooking.Contracts.csproj",
+      "msbuildProject": "../../../src/Shared/VenueBooking.Contracts/VenueBooking.Contracts.csproj"
+    },
     "VenueBooking.SharedKernel/1.0.0": {
       "type": "project",
       "path": "../../../src/Shared/VenueBooking.SharedKernel/VenueBooking.SharedKernel.csproj",
@@ -26396,23 +26641,27 @@
       "Microsoft.Extensions.Logging.Debug >= 9.0.8",
       "Microsoft.Maui.Controls >= 9.0.111",
       "Microsoft.NET.ILLink.Tasks >= 9.0.16",
+      "VenueBooking.Contracts >= 1.0.0",
       "VenueBooking.SharedKernel >= 1.0.0"
     ],
     "net9.0-ios26.0": [
       "Microsoft.Extensions.Logging.Debug >= 9.0.8",
       "Microsoft.Maui.Controls >= 9.0.111",
       "Microsoft.NET.ILLink.Tasks >= 9.0.16",
+      "VenueBooking.Contracts >= 1.0.0",
       "VenueBooking.SharedKernel >= 1.0.0"
     ],
     "net9.0-maccatalyst26.0": [
       "Microsoft.Extensions.Logging.Debug >= 9.0.8",
       "Microsoft.Maui.Controls >= 9.0.111",
       "Microsoft.NET.ILLink.Tasks >= 9.0.16",
+      "VenueBooking.Contracts >= 1.0.0",
       "VenueBooking.SharedKernel >= 1.0.0"
     ],
     "net9.0-windows10.0.19041": [
       "Microsoft.Extensions.Logging.Debug >= 9.0.8",
       "Microsoft.Maui.Controls >= 9.0.111",
+      "VenueBooking.Contracts >= 1.0.0",
       "VenueBooking.SharedKernel >= 1.0.0"
     ]
   },
@@ -26453,6 +26702,9 @@
         "net9.0-android35.0": {
           "targetAlias": "net9.0-android",
           "projectReferences": {
+            "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.Contracts\\VenueBooking.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.Contracts\\VenueBooking.Contracts.csproj"
+            },
             "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
               "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"
             }
@@ -26461,6 +26713,9 @@
         "net9.0-ios26.0": {
           "targetAlias": "net9.0-ios",
           "projectReferences": {
+            "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.Contracts\\VenueBooking.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.Contracts\\VenueBooking.Contracts.csproj"
+            },
             "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
               "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"
             }
@@ -26469,6 +26724,9 @@
         "net9.0-maccatalyst26.0": {
           "targetAlias": "net9.0-maccatalyst",
           "projectReferences": {
+            "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.Contracts\\VenueBooking.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.Contracts\\VenueBooking.Contracts.csproj"
+            },
             "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
               "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"
             }
@@ -26477,6 +26735,9 @@
         "net9.0-windows10.0.19041": {
           "targetAlias": "net9.0-windows10.0.19041.0",
           "projectReferences": {
+            "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.Contracts\\VenueBooking.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.Contracts\\VenueBooking.Contracts.csproj"
+            },
             "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
               "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"
             }

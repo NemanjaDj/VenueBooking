@@ -19,3 +19,4 @@ C:\Users\Master\source\repos\VenueBooking\src\Modules\Event\VenueBooking.Modules
 C:\Users\Master\source\repos\VenueBooking\src\Modules\Event\VenueBooking.Modules.Event\obj\Debug\net9.0\refint\VenueBooking.Modules.Event.dll
 C:\Users\Master\source\repos\VenueBooking\src\Modules\Event\VenueBooking.Modules.Event\obj\Debug\net9.0\VenueBooking.Modules.Event.pdb
 C:\Users\Master\source\repos\VenueBooking\src\Modules\Event\VenueBooking.Modules.Event\obj\Debug\net9.0\ref\VenueBooking.Modules.Event.dll
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Event\VenueBooking.Modules.Event\obj\Debug\net9.0\VenueBooking.Modules.Event.sourcelink.json

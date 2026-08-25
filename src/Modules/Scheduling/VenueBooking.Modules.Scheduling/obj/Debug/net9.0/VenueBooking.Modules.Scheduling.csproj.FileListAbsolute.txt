@@ -17,3 +17,4 @@ C:\Users\Master\source\repos\VenueBooking\src\Modules\Scheduling\VenueBooking.Mo
 C:\Users\Master\source\repos\VenueBooking\src\Modules\Scheduling\VenueBooking.Modules.Scheduling\obj\Debug\net9.0\refint\VenueBooking.Modules.Scheduling.dll
 C:\Users\Master\source\repos\VenueBooking\src\Modules\Scheduling\VenueBooking.Modules.Scheduling\obj\Debug\net9.0\VenueBooking.Modules.Scheduling.pdb
 C:\Users\Master\source\repos\VenueBooking\src\Modules\Scheduling\VenueBooking.Modules.Scheduling\obj\Debug\net9.0\ref\VenueBooking.Modules.Scheduling.dll
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Scheduling\VenueBooking.Modules.Scheduling\obj\Debug\net9.0\VenueBooking.Modules.Scheduling.sourcelink.json

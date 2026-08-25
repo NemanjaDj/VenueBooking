@@ -20,6 +20,7 @@
     <ProjectReference Include="..\..\Modules\Payment\VenueBooking.Modules.Payment\VenueBooking.Modules.Payment.csproj" />
     <ProjectReference Include="..\..\Modules\Notification\VenueBooking.Modules.Notification\VenueBooking.Modules.Notification.csproj" />
     <ProjectReference Include="..\..\Shared\VenueBooking.SharedKernel\VenueBooking.SharedKernel.csproj" />
+    <ProjectReference Include="..\..\Shared\VenueBooking.Contracts\VenueBooking.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

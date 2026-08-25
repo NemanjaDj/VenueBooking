@@ -66,6 +66,7 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\..\..\src\Shared\VenueBooking.SharedKernel\VenueBooking.SharedKernel.csproj" />
+	  <ProjectReference Include="..\..\..\src\Shared\VenueBooking.Contracts\VenueBooking.Contracts.csproj" />
 	</ItemGroup>
 
 </Project>

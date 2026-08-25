@@ -34,6 +34,16 @@
           }
         }
       },
+      "VenueBooking.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenueBooking.Contracts.dll": {}
+        }
+      },
       "VenueBooking.Modules.Booking/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -305,6 +315,11 @@
         "microsoft.openapi.nuspec"
       ]
     },
+    "VenueBooking.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../../Shared/VenueBooking.Contracts/VenueBooking.Contracts.csproj",
+      "msbuildProject": "../../Shared/VenueBooking.Contracts/VenueBooking.Contracts.csproj"
+    },
     "VenueBooking.Modules.Booking/1.0.0": {
       "type": "project",
       "path": "../../Modules/Booking/VenueBooking.Modules.Booking/VenueBooking.Modules.Booking.csproj",
@@ -394,6 +409,7 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "Microsoft.AspNetCore.OpenApi >= 9.0.16",
+      "VenueBooking.Contracts >= 1.0.0",
       "VenueBooking.Modules.Booking >= 1.0.0",
       "VenueBooking.Modules.Event >= 1.0.0",
       "VenueBooking.Modules.Identity >= 1.0.0",
@@ -461,6 +477,9 @@
             },
             "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Venue\\VenueBooking.Modules.Venue\\VenueBooking.Modules.Venue.csproj": {
               "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Modules\\Venue\\VenueBooking.Modules.Venue\\VenueBooking.Modules.Venue.csproj"
+            },
+            "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.Contracts\\VenueBooking.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.Contracts\\VenueBooking.Contracts.csproj"
             },
             "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj": {
               "projectPath": "C:\\Users\\Master\\source\\repos\\VenueBooking\\src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj"

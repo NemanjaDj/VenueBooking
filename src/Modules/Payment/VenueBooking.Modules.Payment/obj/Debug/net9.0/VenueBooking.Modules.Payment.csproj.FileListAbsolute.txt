@@ -15,3 +15,4 @@ C:\Users\Master\source\repos\VenueBooking\src\Modules\Payment\VenueBooking.Modul
 C:\Users\Master\source\repos\VenueBooking\src\Modules\Payment\VenueBooking.Modules.Payment\obj\Debug\net9.0\refint\VenueBooking.Modules.Payment.dll
 C:\Users\Master\source\repos\VenueBooking\src\Modules\Payment\VenueBooking.Modules.Payment\obj\Debug\net9.0\VenueBooking.Modules.Payment.pdb
 C:\Users\Master\source\repos\VenueBooking\src\Modules\Payment\VenueBooking.Modules.Payment\obj\Debug\net9.0\ref\VenueBooking.Modules.Payment.dll
+C:\Users\Master\source\repos\VenueBooking\src\Modules\Payment\VenueBooking.Modules.Payment\obj\Debug\net9.0\VenueBooking.Modules.Payment.sourcelink.json
