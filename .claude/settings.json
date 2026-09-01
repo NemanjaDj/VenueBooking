@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(dotnet add *)"
+      "Bash(dotnet add *)",
+      "Bash(where sqllocaldb *)",
+      "Bash(sqllocaldb info *)",
+      "Bash(dotnet ef *)"
     ]
   }
 }

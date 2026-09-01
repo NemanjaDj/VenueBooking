@@ -1,0 +1,29 @@
+{
+  "solution": {
+    "path": "VenueBooking.sln",
+    "projects": [
+      "src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj",
+      "src\\Shared\\VenueBooking.Contracts\\VenueBooking.Contracts.csproj",
+      "src\\Modules\\Identity\\VenueBooking.Modules.Identity.Contracts\\VenueBooking.Modules.Identity.Contracts.csproj",
+      "src\\Modules\\Identity\\VenueBooking.Modules.Identity\\VenueBooking.Modules.Identity.csproj",
+      "src\\Modules\\Venue\\VenueBooking.Modules.Venue.Contracts\\VenueBooking.Modules.Venue.Contracts.csproj",
+      "src\\Modules\\Venue\\VenueBooking.Modules.Venue\\VenueBooking.Modules.Venue.csproj",
+      "src\\Modules\\Event\\VenueBooking.Modules.Event.Contracts\\VenueBooking.Modules.Event.Contracts.csproj",
+      "src\\Modules\\Event\\VenueBooking.Modules.Event\\VenueBooking.Modules.Event.csproj",
+      "src\\Modules\\Layout\\VenueBooking.Modules.Layout.Contracts\\VenueBooking.Modules.Layout.Contracts.csproj",
+      "src\\Modules\\Layout\\VenueBooking.Modules.Layout\\VenueBooking.Modules.Layout.csproj",
+      "src\\Modules\\Scheduling\\VenueBooking.Modules.Scheduling.Contracts\\VenueBooking.Modules.Scheduling.Contracts.csproj",
+      "src\\Modules\\Scheduling\\VenueBooking.Modules.Scheduling\\VenueBooking.Modules.Scheduling.csproj",
+      "src\\Modules\\Booking\\VenueBooking.Modules.Booking.Contracts\\VenueBooking.Modules.Booking.Contracts.csproj",
+      "src\\Modules\\Booking\\VenueBooking.Modules.Booking\\VenueBooking.Modules.Booking.csproj",
+      "src\\Modules\\Payment\\VenueBooking.Modules.Payment.Contracts\\VenueBooking.Modules.Payment.Contracts.csproj",
+      "src\\Modules\\Payment\\VenueBooking.Modules.Payment\\VenueBooking.Modules.Payment.csproj",
+      "src\\Modules\\Notification\\VenueBooking.Modules.Notification.Contracts\\VenueBooking.Modules.Notification.Contracts.csproj",
+      "src\\Modules\\Notification\\VenueBooking.Modules.Notification\\VenueBooking.Modules.Notification.csproj",
+      "src\\Host\\VenueBooking.Api\\VenueBooking.Api.csproj",
+      "tests\\VenueBooking.UnitTests\\VenueBooking.UnitTests.csproj",
+      "tests\\VenueBooking.IntegrationTests\\VenueBooking.IntegrationTests.csproj",
+      "tests\\VenueBooking.ArchitectureTests\\VenueBooking.ArchitectureTests.csproj"
+    ]
+  }
+}

@@ -1,2 +1,28 @@
 /BACKLOG.md
 /i-want-to-create-flickering-crane.md
+
+# .NET build output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.user
+*.suo
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.userosscache
+*.sln.docstates
+
+# Test results
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+
+# MAUI / mobile build artifacts
+*.apk
+*.aab
+*.ipa
+*.idsig
