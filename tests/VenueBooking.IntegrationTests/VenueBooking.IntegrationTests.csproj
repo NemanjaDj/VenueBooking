@@ -9,6 +9,8 @@
 
   <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="6.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="9.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.8" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
     <PackageReference Include="xunit" Version="2.9.2" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
@@ -20,6 +22,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Host\VenueBooking.Api\VenueBooking.Api.csproj" />
+    <ProjectReference Include="..\..\src\Shared\VenueBooking.Contracts\VenueBooking.Contracts.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Identity\VenueBooking.Modules.Identity\VenueBooking.Modules.Identity.csproj" />
   </ItemGroup>
 
 </Project>
