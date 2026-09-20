@@ -1,21 +1,19 @@
-using VenueBooking.Contracts.Identity;
-
 namespace VenueBooking.Modules.Identity.Services;
 
-public sealed class AuthResult
+public sealed class AuthResult<T>
 {
     public bool Succeeded { get; }
-    public RegisterResponse? User { get; }
+    public T? Value { get; }
     public IReadOnlyCollection<string> Errors { get; }
 
-    private AuthResult(bool succeeded, RegisterResponse? user, IReadOnlyCollection<string> errors)
+    private AuthResult(bool succeeded, T? value, IReadOnlyCollection<string> errors)
     {
         Succeeded = succeeded;
-        User = user;
+        Value = value;
         Errors = errors;
     }
 
-    public static AuthResult Success(RegisterResponse user) => new(true, user, []);
+    public static AuthResult<T> Success(T value) => new(true, value, []);
 
-    public static AuthResult Failure(IEnumerable<string> errors) => new(false, null, [.. errors]);
+    public static AuthResult<T> Failure(IEnumerable<string> errors) => new(false, default, [.. errors]);
 }

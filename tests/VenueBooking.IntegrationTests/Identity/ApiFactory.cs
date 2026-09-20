@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using VenueBooking.Modules.Identity;
@@ -21,6 +22,21 @@ public sealed class ApiFactory : WebApplicationFactory<Program>
         // fixed outside the delegate — otherwise every request/scope would get a fresh Guid and
         // an isolated, empty database.
         var databaseName = $"IntegrationTests-{Guid.NewGuid()}";
+
+        // Supplied explicitly rather than relying on appsettings.Development.json — tests
+        // shouldn't depend on which environment/config file the test host happens to load, and
+        // JwtOptions.ValidateOnStart() would otherwise fail host startup if it's missing.
+        builder.ConfigureAppConfiguration((_, config) =>
+        {
+            config.AddInMemoryCollection(new Dictionary<string, string?>
+            {
+                ["Jwt:Issuer"] = "VenueBooking.IntegrationTests",
+                ["Jwt:Audience"] = "VenueBooking.IntegrationTests",
+                ["Jwt:SigningKey"] = "integration-tests-signing-key-at-least-32-bytes-long!!",
+                ["Jwt:AccessTokenMinutes"] = "15",
+                ["Jwt:RefreshTokenDays"] = "7",
+            });
+        });
 
         builder.ConfigureServices(services =>
         {

@@ -2,7 +2,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using VenueBooking.Contracts.Enums;
+using VenueBooking.Modules.Identity.Authentication;
 using VenueBooking.Modules.Identity.Domain;
 using VenueBooking.Modules.Identity.Persistence;
 using VenueBooking.Modules.Identity.Services;
@@ -21,10 +23,22 @@ public static class IdentityModuleExtensions
             {
                 options.User.RequireUniqueEmail = true;
                 options.Password.RequiredLength = 8;
+
+                // Brute-force protection: 5 failed attempts locks the account for 15 minutes.
+                options.Lockout.MaxFailedAccessAttempts = 5;
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(15);
+                options.Lockout.AllowedForNewUsers = true;
             })
             .AddRoles<IdentityRole<Guid>>()
             .AddEntityFrameworkStores<IdentityDbContext>();
 
+        services.AddOptions<JwtOptions>()
+            .Bind(configuration.GetSection(JwtOptions.SectionName))
+            .ValidateDataAnnotations()
+            .ValidateOnStart();
+
+        services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
+        services.AddSingleton<IRefreshTokenGenerator, RefreshTokenGenerator>();
         services.AddScoped<IAuthService, AuthService>();
 
         return services;
