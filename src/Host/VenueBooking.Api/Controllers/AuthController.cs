@@ -27,16 +27,25 @@ public sealed class AuthController(IAuthService authService) : ControllerBase
     {
         var result = await authService.LoginAsync(request, cancellationToken);
 
-        if (!result.Succeeded)
-        {
-            return Unauthorized(new ProblemDetails
-            {
-                Status = StatusCodes.Status401Unauthorized,
-                Title = result.Errors.FirstOrDefault() ?? "Invalid email or password.",
-            });
-        }
+        return result.Succeeded
+            ? Ok(result.Value)
+            : ToUnauthorizedProblem(result.Errors, fallbackTitle: "Invalid email or password.");
+    }
 
-        return Ok(result.Value);
+    /// <summary>
+    /// Renews an expiring session from the refresh token alone. Anonymous by design: the caller's
+    /// access token has usually expired by the time it gets here, which is the whole point.
+    /// </summary>
+    [HttpPost("refresh")]
+    [ProducesResponseType(typeof(LoginResponse), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status401Unauthorized)]
+    public async Task<IActionResult> Refresh(RefreshRequest request, CancellationToken cancellationToken)
+    {
+        var result = await authService.RefreshAsync(request, cancellationToken);
+
+        return result.Succeeded
+            ? Ok(result.Value)
+            : ToUnauthorizedProblem(result.Errors, fallbackTitle: "Invalid or expired refresh token.");
     }
 
     private ActionResult ToValidationProblem(IEnumerable<string> errors)
@@ -48,4 +57,11 @@ public sealed class AuthController(IAuthService authService) : ControllerBase
 
         return ValidationProblem(ModelState);
     }
+
+    private UnauthorizedObjectResult ToUnauthorizedProblem(IReadOnlyCollection<string> errors, string fallbackTitle) =>
+        Unauthorized(new ProblemDetails
+        {
+            Status = StatusCodes.Status401Unauthorized,
+            Title = errors.FirstOrDefault() ?? fallbackTitle,
+        });
 }
