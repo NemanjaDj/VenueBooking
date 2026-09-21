@@ -26,6 +26,14 @@ public sealed class ApiFactory : WebApplicationFactory<Program>
         // Supplied explicitly rather than relying on appsettings.Development.json — tests
         // shouldn't depend on which environment/config file the test host happens to load, and
         // JwtOptions.ValidateOnStart() would otherwise fail host startup if it's missing.
+        // Redirects the rolling-file sink out of the repository and gives each factory its own
+        // file, so concurrently hosted test classes don't contend for one handle. The index
+        // tracks the "File" entry in the API's appsettings.json "Serilog:WriteTo" array.
+        var logFilePath = Path.Combine(
+            Path.GetTempPath(),
+            "VenueBooking.IntegrationTests",
+            $"{Guid.NewGuid():N}-.jsonl");
+
         builder.ConfigureAppConfiguration((_, config) =>
         {
             config.AddInMemoryCollection(new Dictionary<string, string?>
@@ -35,6 +43,7 @@ public sealed class ApiFactory : WebApplicationFactory<Program>
                 ["Jwt:SigningKey"] = "integration-tests-signing-key-at-least-32-bytes-long!!",
                 ["Jwt:AccessTokenMinutes"] = "15",
                 ["Jwt:RefreshTokenDays"] = "7",
+                ["Serilog:WriteTo:1:Args:path"] = logFilePath,
             });
         });
 

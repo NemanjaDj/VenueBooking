@@ -2,10 +2,12 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using VenueBooking.Contracts.Enums;
 using VenueBooking.Modules.Identity.Authentication;
 using VenueBooking.Modules.Identity.Domain;
+using VenueBooking.Modules.Identity.Logging;
 using VenueBooking.Modules.Identity.Persistence;
 using VenueBooking.Modules.Identity.Services;
 
@@ -53,9 +55,12 @@ public static class IdentityModuleExtensions
     {
         using var scope = services.CreateScope();
         var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole<Guid>>>();
+        var logger = scope.ServiceProvider.GetRequiredService<ILoggerFactory>().CreateLogger(typeof(IdentityModuleExtensions));
 
         foreach (var role in Enum.GetNames<UserRole>())
         {
+            // Roles that already exist are the normal case on every start after the first, and
+            // saying so each time would be noise. Only an actual change is worth an event.
             if (await roleManager.RoleExistsAsync(role))
             {
                 continue;
@@ -64,9 +69,12 @@ public static class IdentityModuleExtensions
             var result = await roleManager.CreateAsync(new IdentityRole<Guid>(role));
             if (!result.Succeeded)
             {
-                throw new InvalidOperationException(
-                    $"Failed to seed role '{role}': {string.Join(", ", result.Errors.Select(e => e.Description))}");
+                var reason = string.Join(", ", result.Errors.Select(e => e.Description));
+                IdentityLog.RoleSeedingFailed(logger, role, reason);
+                throw new InvalidOperationException($"Failed to seed role '{role}': {reason}");
             }
+
+            IdentityLog.RoleSeeded(logger, role);
         }
     }
 }

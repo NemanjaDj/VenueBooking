@@ -4,6 +4,7 @@
     "projects": [
       "src\\Shared\\VenueBooking.SharedKernel\\VenueBooking.SharedKernel.csproj",
       "src\\Shared\\VenueBooking.Contracts\\VenueBooking.Contracts.csproj",
+      "src\\Shared\\VenueBooking.Logging\\VenueBooking.Logging.csproj",
       "src\\Modules\\Identity\\VenueBooking.Modules.Identity.Contracts\\VenueBooking.Modules.Identity.Contracts.csproj",
       "src\\Modules\\Identity\\VenueBooking.Modules.Identity\\VenueBooking.Modules.Identity.csproj",
       "src\\Modules\\Venue\\VenueBooking.Modules.Venue.Contracts\\VenueBooking.Modules.Venue.Contracts.csproj",

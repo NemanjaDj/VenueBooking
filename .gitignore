@@ -26,3 +26,7 @@
 *.aab
 *.ipa
 *.idsig
+
+# Local log output (the file sink in appsettings.json)
+logs/
+*.jsonl
