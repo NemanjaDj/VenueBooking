@@ -1,12 +1,15 @@
+using System.Security.Claims;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using VenueBooking.Api.Diagnostics;
+using VenueBooking.Api.OpenApi;
 using VenueBooking.Logging;
 using VenueBooking.Modules.Identity;
 using VenueBooking.Modules.Identity.Authentication;
+using VenueBooking.Modules.Identity.Authorization;
 
 // Two-stage initialisation. The bootstrap logger covers the window before the host exists, so a
 // failure in configuration itself — a malformed Serilog section, a JwtOptions value that fails
@@ -30,7 +33,11 @@ try
 
     builder.Services.AddControllers();
     // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-    builder.Services.AddOpenApi();
+    builder.Services.AddOpenApi(options =>
+    {
+        options.AddDocumentTransformer<BearerSecuritySchemeTransformer>();
+        options.AddOperationTransformer<BearerSecurityRequirementTransformer>();
+    });
 
     builder.Services.AddProblemDetails();
     builder.Services.AddExceptionHandler<UnhandledExceptionLogger>();
@@ -55,20 +62,42 @@ try
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwt.SigningKey)),
                 ValidateLifetime = true,
                 ClockSkew = TimeSpan.FromSeconds(30),
+
+                // Stated rather than left to the defaults, because this is the seam between the
+                // claims JwtTokenGenerator writes and what [Authorize(Policy = ...)] reads back.
+                // "sub" and the role claims land under these types once the bearer handler's
+                // inbound claim map has run; naming them here means a change on either side of
+                // the seam surfaces as a failing authorization test rather than as an endpoint
+                // that quietly admits everyone.
+                NameClaimType = ClaimTypes.NameIdentifier,
+                RoleClaimType = ClaimTypes.Role,
             };
         });
+
+    // AddAuthorization supplies the policy evaluation UseAuthorization performs; AddRoleAuthorization
+    // supplies what it evaluates. MVC happens to register the former as well, but relying on that
+    // would leave the pipeline's security depending on a side effect of AddControllers.
+    builder.Services.AddAuthorization();
+    builder.Services.AddRoleAuthorization();
 
     var app = builder.Build();
 
     // Configure the HTTP request pipeline.
     if (app.Environment.IsDevelopment())
     {
-        app.MapOpenApi();
+        // Exempted from the fallback policy: the document is how an API consumer finds out where
+        // to get a token, so requiring one to read it would close the loop on itself.
+        app.MapOpenApi().AllowAnonymous();
     }
 
     // Ahead of request logging, so a failure is already reflected in the status code by the time
     // the request summary is written.
     app.UseExceptionHandler();
+
+    // 401s and 403s come from the authentication/authorization middleware as a bare status code
+    // with no body. This gives them the same ProblemDetails shape as every other error the API
+    // returns, so a client has one response format to parse rather than two.
+    app.UseStatusCodePages();
 
     app.UseSerilogRequestLogging(RequestLogging.Configure);
 

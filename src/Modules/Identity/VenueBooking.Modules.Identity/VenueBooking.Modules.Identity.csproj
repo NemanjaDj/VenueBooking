@@ -7,6 +7,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <!--
+      The policy catalogue (Authorization/) lives with the roles it is built from, so "which roles
+      exist" and "what each one may do" stay in one module. That needs the authorization
+      abstractions — not ASP.NET Core MVC or hosting: the module declares the policies, the host
+      applies them to endpoints.
+    -->
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="9.0.8" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.8" />
     <!--
