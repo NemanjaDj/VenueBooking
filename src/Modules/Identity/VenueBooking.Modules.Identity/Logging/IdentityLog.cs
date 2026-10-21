@@ -9,7 +9,8 @@ namespace VenueBooking.Modules.Identity.Logging;
 /// </summary>
 /// <remarks>
 /// Event ids are allocated per module from a 100-wide block — Identity owns 1000-1099 — so an id
-/// in a log file identifies exactly one event without a lookup table.
+/// in a log file identifies exactly one event without a lookup table. Within the block each area
+/// takes a decade: roles 1000s, registration 1010s, login 1020s, session refresh 1030s.
 /// <para>
 /// Nothing here takes a password, a token or an email address as an argument. Auth events
 /// identify a user by <see cref="Guid"/>; anything else belongs in the database, not the log.
@@ -28,4 +29,108 @@ internal static partial class IdentityLog
         Level = LogLevel.Error,
         Message = "Failed to seed identity role {Role}: {Reason}")]
     public static partial void RoleSeedingFailed(ILogger logger, string role, string reason);
+
+    // Registration. Failures carry ASP.NET Identity's error *codes* ("DuplicateEmail",
+    // "PasswordTooShort"), never its descriptions — a description such as "Email 'x@y' is already
+    // taken" embeds the very address this log must not hold.
+
+    [LoggerMessage(
+        EventId = 1010,
+        Level = LogLevel.Information,
+        Message = "Registered user {UserId} with role {Role}")]
+    public static partial void UserRegistered(ILogger logger, Guid userId, string role);
+
+    [LoggerMessage(
+        EventId = 1011,
+        Level = LogLevel.Information,
+        Message = "Rejected registration for role {Role}: {ErrorCodes}")]
+    public static partial void RegistrationRejected(ILogger logger, string role, IReadOnlyList<string> errorCodes);
+
+    [LoggerMessage(
+        EventId = 1012,
+        Level = LogLevel.Error,
+        Message = "Failed to assign role {Role} to new user {UserId}, rolling the registration back: {ErrorCodes}")]
+    public static partial void RegistrationRoleAssignmentFailed(ILogger logger, Guid userId, string role, IReadOnlyList<string> errorCodes);
+
+    /// <remarks>
+    /// Critical because it leaves an account that can sign in but holds no role — the one state
+    /// registration promises never to produce. It needs a person to clean it up.
+    /// </remarks>
+    [LoggerMessage(
+        EventId = 1013,
+        Level = LogLevel.Critical,
+        Message = "Failed to roll back registration of user {UserId}, which now exists with no role: {ErrorCodes}")]
+    public static partial void RegistrationRollbackFailed(ILogger logger, Guid userId, IReadOnlyList<string> errorCodes);
+
+    // Login. Failures are Warning: each one alone is routine, but a run of them against one
+    // UserId is password guessing, and a run of LoginFailedUnknownAccount is credential stuffing.
+
+    [LoggerMessage(
+        EventId = 1020,
+        Level = LogLevel.Information,
+        Message = "User {UserId} logged in")]
+    public static partial void LoginSucceeded(ILogger logger, Guid userId);
+
+    /// <remarks>
+    /// Deliberately carries nothing: the only identifier available is the email that was typed,
+    /// which is personal data when it is real and attacker-chosen noise when it isn't.
+    /// </remarks>
+    [LoggerMessage(
+        EventId = 1021,
+        Level = LogLevel.Warning,
+        Message = "Login failed: no account matches the supplied email")]
+    public static partial void LoginFailedUnknownAccount(ILogger logger);
+
+    [LoggerMessage(
+        EventId = 1022,
+        Level = LogLevel.Warning,
+        Message = "Login failed for user {UserId}: wrong password, {FailedAttempts} of {MaxFailedAttempts} attempts before lockout")]
+    public static partial void LoginFailedInvalidPassword(ILogger logger, Guid userId, int failedAttempts, int maxFailedAttempts);
+
+    [LoggerMessage(
+        EventId = 1023,
+        Level = LogLevel.Warning,
+        Message = "Locked out user {UserId} until {LockoutEndUtc} after repeated failed logins")]
+    public static partial void AccountLockedOut(ILogger logger, Guid userId, DateTimeOffset? lockoutEndUtc);
+
+    [LoggerMessage(
+        EventId = 1024,
+        Level = LogLevel.Warning,
+        Message = "Login rejected for user {UserId}: account locked out until {LockoutEndUtc}")]
+    public static partial void LoginRejectedLockedOut(ILogger logger, Guid userId, DateTimeOffset? lockoutEndUtc);
+
+    // Session refresh.
+
+    /// <remarks>
+    /// Debug, not Information: every active client refreshes on each access-token expiry, so at
+    /// Information this would be the loudest event in the system while saying the least.
+    /// </remarks>
+    [LoggerMessage(
+        EventId = 1030,
+        Level = LogLevel.Debug,
+        Message = "Refreshed session for user {UserId}")]
+    public static partial void SessionRefreshed(ILogger logger, Guid userId);
+
+    /// <summary>
+    /// The routine refusals, kept under one event id so they can be counted together and told
+    /// apart by <paramref name="reason"/>. <paramref name="userId"/> is null only when the token
+    /// matched nothing, and so names no one.
+    /// </summary>
+    [LoggerMessage(
+        EventId = 1031,
+        Level = LogLevel.Information,
+        Message = "Refresh rejected for user {UserId}: {Reason}")]
+    public static partial void RefreshRejected(ILogger logger, Guid? userId, RefreshRejectionReason reason);
+
+    [LoggerMessage(
+        EventId = 1032,
+        Level = LogLevel.Warning,
+        Message = "Refresh token reuse detected for user {UserId}; revoked {RevokedTokenCount} outstanding refresh token(s)")]
+    public static partial void RefreshTokenReuseDetected(ILogger logger, Guid userId, int revokedTokenCount);
+
+    [LoggerMessage(
+        EventId = 1033,
+        Level = LogLevel.Warning,
+        Message = "Refresh rejected for user {UserId}: account locked out until {LockoutEndUtc}")]
+    public static partial void RefreshRejectedLockedOut(ILogger logger, Guid userId, DateTimeOffset? lockoutEndUtc);
 }

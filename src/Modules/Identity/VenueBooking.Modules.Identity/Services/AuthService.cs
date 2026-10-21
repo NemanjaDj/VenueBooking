@@ -1,19 +1,27 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using VenueBooking.Contracts.Identity;
 using VenueBooking.Modules.Identity.Authentication;
 using VenueBooking.Modules.Identity.Domain;
+using VenueBooking.Modules.Identity.Logging;
 using VenueBooking.Modules.Identity.Persistence;
 
 namespace VenueBooking.Modules.Identity.Services;
 
+/// <remarks>
+/// Every outcome — success or each distinct kind of failure — is recorded through
+/// <see cref="IdentityLog"/>. The responses stay deliberately vague to avoid revealing which
+/// accounts exist; the log is where the real reason is kept, keyed by user id alone.
+/// </remarks>
 internal sealed class AuthService(
     UserManager<ApplicationUser> userManager,
     IJwtTokenGenerator jwtTokenGenerator,
     IRefreshTokenGenerator refreshTokenGenerator,
     IdentityDbContext db,
-    IOptions<JwtOptions> jwtOptions) : IAuthService
+    IOptions<JwtOptions> jwtOptions,
+    ILogger<AuthService> logger) : IAuthService
 {
     // Deliberately identical whether the email doesn't exist or the password is wrong, so the
     // response never reveals which emails are registered.
@@ -33,21 +41,31 @@ internal sealed class AuthService(
             Email = request.Email,
         };
 
+        var roleName = request.Role.ToString();
+
         var createResult = await userManager.CreateAsync(user, request.Password);
         if (!createResult.Succeeded)
         {
+            IdentityLog.RegistrationRejected(logger, roleName, ErrorCodes(createResult));
             return AuthResult<RegisterResponse>.Failure(createResult.Errors.Select(e => e.Description));
         }
 
-        var roleName = request.Role.ToString();
         var roleResult = await userManager.AddToRoleAsync(user, roleName);
         if (!roleResult.Succeeded)
         {
+            IdentityLog.RegistrationRoleAssignmentFailed(logger, user.Id, roleName, ErrorCodes(roleResult));
+
             // Don't leave behind a user with no role assigned.
-            await userManager.DeleteAsync(user);
+            var deleteResult = await userManager.DeleteAsync(user);
+            if (!deleteResult.Succeeded)
+            {
+                IdentityLog.RegistrationRollbackFailed(logger, user.Id, ErrorCodes(deleteResult));
+            }
+
             return AuthResult<RegisterResponse>.Failure(roleResult.Errors.Select(e => e.Description));
         }
 
+        IdentityLog.UserRegistered(logger, user.Id, roleName);
         return AuthResult<RegisterResponse>.Success(new RegisterResponse(user.Id, user.Email!, request.Role));
     }
 
@@ -56,11 +74,13 @@ internal sealed class AuthService(
         var user = await userManager.FindByEmailAsync(request.Email);
         if (user is null)
         {
+            IdentityLog.LoginFailedUnknownAccount(logger);
             return AuthResult<LoginResponse>.Failure([InvalidCredentialsError]);
         }
 
         if (await userManager.IsLockedOutAsync(user))
         {
+            IdentityLog.LoginRejectedLockedOut(logger, user.Id, await userManager.GetLockoutEndDateAsync(user));
             return AuthResult<LoginResponse>.Failure([AccountLockedError]);
         }
 
@@ -68,12 +88,15 @@ internal sealed class AuthService(
         {
             // Tracks toward the lockout threshold configured in IdentityModuleExtensions.
             await userManager.AccessFailedAsync(user);
+            await LogFailedPasswordAsync(user);
             return AuthResult<LoginResponse>.Failure([InvalidCredentialsError]);
         }
 
         await userManager.ResetAccessFailedCountAsync(user);
 
-        return AuthResult<LoginResponse>.Success(await IssueTokensAsync(user, rotatedFrom: null, cancellationToken));
+        var tokens = await IssueTokensAsync(user, rotatedFrom: null, cancellationToken);
+        IdentityLog.LoginSucceeded(logger, user.Id);
+        return AuthResult<LoginResponse>.Success(tokens);
     }
 
     public async Task<AuthResult<LoginResponse>> RefreshAsync(RefreshRequest request, CancellationToken cancellationToken = default)
@@ -84,6 +107,7 @@ internal sealed class AuthService(
         var storedToken = await db.RefreshTokens.SingleOrDefaultAsync(t => t.TokenHash == tokenHash, cancellationToken);
         if (storedToken is null)
         {
+            IdentityLog.RefreshRejected(logger, userId: null, RefreshRejectionReason.UnknownToken);
             return AuthResult<LoginResponse>.Failure([InvalidRefreshTokenError]);
         }
 
@@ -92,37 +116,64 @@ internal sealed class AuthService(
             // Tokens are single-use, so a revoked one coming back means the value was captured
             // and replayed (or a client replayed a stale copy of its own). Either way it is no
             // longer a secret: cut the whole family, forcing a fresh sign-in.
-            await RevokeActiveTokensForUserAsync(storedToken.UserId, cancellationToken);
+            var revokedCount = await RevokeActiveTokensForUserAsync(storedToken.UserId, cancellationToken);
+            IdentityLog.RefreshTokenReuseDetected(logger, storedToken.UserId, revokedCount);
             return AuthResult<LoginResponse>.Failure([InvalidRefreshTokenError]);
         }
 
         if (storedToken.HasExpired(DateTime.UtcNow))
         {
+            IdentityLog.RefreshRejected(logger, storedToken.UserId, RefreshRejectionReason.ExpiredToken);
             return AuthResult<LoginResponse>.Failure([InvalidRefreshTokenError]);
         }
 
         var user = await userManager.FindByIdAsync(storedToken.UserId.ToString());
         if (user is null)
         {
+            IdentityLog.RefreshRejected(logger, storedToken.UserId, RefreshRejectionReason.UserNotFound);
             return AuthResult<LoginResponse>.Failure([InvalidRefreshTokenError]);
         }
 
         // A refresh must not become a way around a lockout applied after the token was issued.
         if (await userManager.IsLockedOutAsync(user))
         {
+            IdentityLog.RefreshRejectedLockedOut(logger, user.Id, await userManager.GetLockoutEndDateAsync(user));
             return AuthResult<LoginResponse>.Failure([AccountLockedError]);
         }
 
         try
         {
-            return AuthResult<LoginResponse>.Success(await IssueTokensAsync(user, storedToken, cancellationToken));
+            var tokens = await IssueTokensAsync(user, storedToken, cancellationToken);
+            IdentityLog.SessionRefreshed(logger, user.Id);
+            return AuthResult<LoginResponse>.Success(tokens);
         }
         catch (DbUpdateConcurrencyException)
         {
             // Another request rotated this same token first and won the RowVersion check. Only
             // one of the two may walk away with a new pair.
+            IdentityLog.RefreshRejected(logger, user.Id, RefreshRejectionReason.ConcurrentRotation);
             return AuthResult<LoginResponse>.Failure([InvalidRefreshTokenError]);
         }
+    }
+
+    /// <summary>
+    /// Records a wrong password as either one more step toward lockout or the step that tripped
+    /// it. Read back after <see cref="UserManager{TUser}.AccessFailedAsync"/>, because that call
+    /// is what decides — and on lockout it also resets the counter to zero.
+    /// </summary>
+    private async Task LogFailedPasswordAsync(ApplicationUser user)
+    {
+        if (await userManager.IsLockedOutAsync(user))
+        {
+            IdentityLog.AccountLockedOut(logger, user.Id, await userManager.GetLockoutEndDateAsync(user));
+            return;
+        }
+
+        IdentityLog.LoginFailedInvalidPassword(
+            logger,
+            user.Id,
+            await userManager.GetAccessFailedCountAsync(user),
+            userManager.Options.Lockout.MaxFailedAccessAttempts);
     }
 
     /// <summary>
@@ -157,7 +208,8 @@ internal sealed class AuthService(
         return new LoginResponse(accessToken, rawRefreshToken, accessTokenExpiresAtUtc);
     }
 
-    private async Task RevokeActiveTokensForUserAsync(Guid userId, CancellationToken cancellationToken)
+    /// <returns>How many tokens were still active and are now revoked.</returns>
+    private async Task<int> RevokeActiveTokensForUserAsync(Guid userId, CancellationToken cancellationToken)
     {
         var revokedAtUtc = DateTime.UtcNow;
         var activeTokens = await db.RefreshTokens
@@ -170,5 +222,8 @@ internal sealed class AuthService(
         }
 
         await db.SaveChangesAsync(cancellationToken);
+        return activeTokens.Count;
     }
+
+    private static string[] ErrorCodes(IdentityResult result) => [.. result.Errors.Select(e => e.Code)];
 }

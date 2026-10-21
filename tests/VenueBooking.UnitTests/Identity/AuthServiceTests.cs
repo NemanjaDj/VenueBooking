@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging.Testing;
 using Microsoft.Extensions.Options;
 using VenueBooking.Contracts.Enums;
 using VenueBooking.Contracts.Identity;
@@ -11,13 +12,14 @@ using VenueBooking.Modules.Identity.Services;
 
 namespace VenueBooking.UnitTests.Identity;
 
-public sealed class AuthServiceTests : IDisposable
+public sealed partial class AuthServiceTests : IDisposable
 {
     private const string Password = "Passw0rd!";
     private const string InvalidRefreshTokenError = "Invalid or expired refresh token.";
 
     private readonly ServiceProvider _services;
     private readonly RefreshTokenGenerator _refreshTokens = new();
+    private readonly FakeLogger<AuthService> _logger = new();
     private readonly AuthService _sut;
 
     public AuthServiceTests()
@@ -60,7 +62,8 @@ public sealed class AuthServiceTests : IDisposable
             new JwtTokenGenerator(jwtOptions),
             _refreshTokens,
             _services.GetRequiredService<IdentityDbContext>(),
-            jwtOptions);
+            jwtOptions,
+            _logger);
     }
 
     [Fact]
